@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sports Teams Hangman</title>
+	<link rel="stylesheet" type="text/css" href="Assets/css/reset.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body style="background-image: Assets/Images/Houston.png">
+	<!-- header -->
+	<div class="page-header">
+  		<h1>Sports Teams Hangman</h1>
+	</div>
+	
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-1"></div> <!-- padding on left side -->
+			
+			<!-- main section for all the game stuff -->
+			<div class="col-sm-8">
+
+				<!-- for in game heading and start button -->
+				<div class="row">
+					<h2> Press any key to begin</h2>
+				</div>
+
+				<!-- for actual hang man game -->
+				<div class="row">
+					
+					<!-- shows catagory -->
+					<div id="catagoryName"> </div>
+					<div id="hold"></div>
+    				<div id="livesLeft"></div> 
+
+				</div>
+
+				<div class="row">
+					 <canvas id="stickman"></canvas>
+				</div>
+				
+				<!-- hint button and display hints -->
+				<div class="row">
+					<div id="hintGiven">Hint-</div> 
+					<button id="getHints">Get a Hint</button>
+					<button id="resetPlayAgain">Restart/Play Again</button>
+				</div>
+
+
+			</div>
+
+			<div class="col-sm-1"></div> <!-- padding between game and rules -->
+			
+			<!-- Rules Panel -->
+			<div class="col-sm-3">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title text-center">Rules</h3>
+				  	</div> <!-- closing heading for panel of rules -->
+					  	
+				  	<div class="panel-body">
+				  		<ul>
+				  			<li>Play till man is hanged (10 lives).</li>
+				  			<li>Only three hints are allowed.</li>
+				  			<li>You will be given a catagory to start the game.</li>
+				  			<li>You can ask for two hints, but hint(s) come at a cost. Asking for first hint will cost the man 3 lives. Asking for second hint will cost the man 4 more lives.</li>
+				  		</ul> <!-- closing list of rules -->
+					</div> <!-- closing the panel body of rules -->
+				</div>	<!-- closing panel of rules	 -->			
+			 </div> <!-- closing column for rules -->
+		</div>
+	</div>
+	
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+	<!-- Javascript for the game -->
+	<script type="text/javascript" src="game.js"></script>
+</body>
+</html>
